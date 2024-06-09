@@ -21,6 +21,8 @@
     "@babel/preset-env": "^7.24.7",
     "@vitejs/plugin-vue": "^2.2.0",
     "@vue/cli-service": "^5.0.8",
+    "sass": "^1.77.4",
+    "sass-loader": "^14.2.1",
     "vite": "^2.8.0"
   }
 }
