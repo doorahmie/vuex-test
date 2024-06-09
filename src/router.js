@@ -1,43 +1,49 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
-import EventList from './views/EventList.vue'
-import EventDetails from './views/EventDetails.vue'
-import EventCreate from './views/EventCreate.vue'
-import ErrorDisplay from './views/ErrorDisplay.vue'
-import About from './views/About.vue'
+import { createRouter, createWebHashHistory } from "vue-router";
+import EventList from "./views/EventList.vue";
+import EventDetails from "./views/EventDetails.vue";
+import EventCreate from "./views/EventCreate.vue";
+import ErrorDisplay from "./views/ErrorDisplay.vue";
+import About from "./views/About.vue";
+import TestComponent from "./views/TestComponent.vue";
 
 const routes = [
   {
-    path: '/',
-    name: 'EventList',
-    component: EventList
+    path: "/",
+    name: "EventList",
+    component: EventList,
   },
   {
-    path: '/event/:id',
-    name: 'EventDetails',
+    path: "/event/:id",
+    name: "EventDetails",
     props: true,
-    component: EventDetails
+    component: EventDetails,
   },
   {
-    path: '/event/create',
-    name: 'EventCreate',
-    component: EventCreate
+    path: "/event/create",
+    name: "EventCreate",
+    component: EventCreate,
   },
   {
-    path: '/about',
-    name: 'About',
-    component: About
+    path: "/about",
+    name: "About",
+    component: About,
   },
   {
-    path: '/error/:error',
-    name: 'ErrorDisplay',
+    path: "/test",
+    name: "TestComponent",
+    component: TestComponent,
+  },
+  {
+    path: "/error/:error",
+    name: "ErrorDisplay",
     props: true,
-    component: ErrorDisplay
-  }
-]
+    component: ErrorDisplay,
+  },
+];
 
 const router = createRouter({
   history: createWebHashHistory(),
-  routes
-})
+  routes,
+});
 
-export default router
+export default router;
