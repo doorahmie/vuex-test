@@ -4,7 +4,7 @@ import EventDetails from "./views/EventDetails.vue";
 import EventCreate from "./views/EventCreate.vue";
 import ErrorDisplay from "./views/ErrorDisplay.vue";
 import About from "./views/About.vue";
-import TestComponent from "./views/TestComponent.vue";
+import DiscordVue from "./views/DiscordVue.vue";
 
 const routes = [
   {
@@ -29,9 +29,9 @@ const routes = [
     component: About,
   },
   {
-    path: "/test",
-    name: "TestComponent",
-    component: TestComponent,
+    path: "/DiscordVue",
+    name: "DiscordVue",
+    component: DiscordVue,
   },
   {
     path: "/error/:error",
