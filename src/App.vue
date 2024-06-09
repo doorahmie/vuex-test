@@ -2,8 +2,7 @@
   <div id="app">
     <div id="nav">
       <router-link :to="{ name: 'EventList' }">Events</router-link> |
-      <router-link :to="{ name: 'About' }">About</router-link>
-      |
+      <router-link :to="{ name: 'About' }">About</router-link> |
       <router-link :to="{ name: 'EventCreate' }">Create Event</router-link>
     </div>
     <router-view />
@@ -61,7 +60,7 @@ input {
   margin-bottom: 24px;
 }
 
-input[type='text'] {
+input[type="text"] {
   padding: 0px 10px;
 }
 
