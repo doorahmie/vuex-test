@@ -5,7 +5,8 @@
       <router-link :to="{ name: 'About' }">About</router-link> |
       <router-link :to="{ name: 'EventCreate' }">Create Event</router-link> |
       <!-- <router-link :to="{name: 'TestComponent'}">Test Component</router-link> -->
-      <router-link :to="{name: 'DiscordVue'}">Discord</router-link>
+      <router-link :to="{name: 'DiscordVue'}">Discord</router-link> |
+      <router-link :to="{name: 'HookTest'}">HookTest</router-link>
     </div>
     <router-view />
   </div>

@@ -5,6 +5,7 @@ import EventCreate from "./views/EventCreate.vue";
 import ErrorDisplay from "./views/ErrorDisplay.vue";
 import About from "./views/About.vue";
 import DiscordVue from "./views/DiscordVue.vue";
+import HookTest from "./views/HookTest.vue";
 
 const routes = [
   {
@@ -32,6 +33,11 @@ const routes = [
     path: "/DiscordVue",
     name: "DiscordVue",
     component: DiscordVue,
+  },
+  {
+    path: "/HookTest",
+    name: "HookTest",
+    component: HookTest,
   },
   {
     path: "/error/:error",
