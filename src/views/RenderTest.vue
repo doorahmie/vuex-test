@@ -1,5 +1,5 @@
 <script setup>
-    import { ref, reactive } from 'vue'
+    import { ref, reactive, h } from 'vue'
     const refMessage = ref('안녕하세요. 김민지 입니다.')
     const reactiveMessage = reactive({ msg: '싱크로나이즈 스위밍' })
     const toggleRefMessage = () => {
@@ -9,10 +9,11 @@
         console.log('reactiveMessage.msg : ', reactiveMessage.msg)
         reactiveMessage.msg = reactiveMessage.msg === '아티스틱 스위밍' ? '싱크로나이즈 스위밍' : '아티스틱 스위밍'
     }
+
 </script>
 <template>
     <div>
-        <h1>HookTest</h1>
+        <h1>RenderTest</h1>
         <br />
         <br />
         <br />
