@@ -5,7 +5,17 @@
     const getReactiveMessageLength = computed(() => {
         return reactiveMessage.msg.length > 9 ? 'Yes' : 'No'
     })
-    const nowWithComputed = computed(() => Date.now())
+    const nowWithComputed = computed(() => Date.now(), {
+        // https://vuejs.org/api/reactivity-core#computed
+        onTrack(e) {
+            // debugger
+            console.log('onTrack : ', e)
+        },
+        onTrigger(e) {
+            // debugger
+            console.log('onTrigger : ', e)
+        }
+    })
 
     const toggleRefMessage = () => {
         refMessage.value = refMessage.value === '김건희로 개명한 김민지' ? '안녕하세요. 김민지 입니다.' : '김건희로 개명한 김민지'
